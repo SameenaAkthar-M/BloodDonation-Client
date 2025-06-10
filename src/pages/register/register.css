@@ -1,0 +1,151 @@
+.outer-page {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 91vh;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #8C1C13;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 20px;
+}
+
+.register-title{
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  padding-top: 10px;
+  font-size: 20px;
+  /* animation: fadeIn 0.2s ease-in-out; */
+}
+
+.register-title hr{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.register-title p{
+  margin-bottom: 0;
+}
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 20px;
+  gap: 5px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+
+.register-form {
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.register-form.show {
+  opacity: 1;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.register-form.hidden {
+  opacity: 0;
+}
+
+.register-form label {
+  width: 120px;
+  text-align: left;
+}
+
+.register-form select,
+.register-form input {
+  flex: 1
+}
+
+.register-form select{
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.register-form input{
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.register-form div{
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form div{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.registration-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+select{
+  border-radius: 8px;
+}
+
+.register-butn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.register-form button{
+  background-color: rgb(226, 163, 35);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width:480px){
+  .outer-page {
+    max-width: 350px;
+  }
+}
+
+@media (min-width:481px) and (max-width:980px){
+  .outer-page{
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 981px) and (max-width:1366px){
+  .outer-page{
+    font-size: 18px;
+  }
+}
