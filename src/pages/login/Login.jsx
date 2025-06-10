@@ -23,7 +23,7 @@ const Login = ({setUser}) => {
     e.preventDefault();
     console.log(formData)
     try{
-      const res=await axios.post('https://red-pulse-donation.netlify.app/api/user/login',formData);
+      const res=await axios.post('https://blooddonation-server-1.onrender.com/api/user/login',formData);
       console.log(res.data)
 
       if(res.data.success){
