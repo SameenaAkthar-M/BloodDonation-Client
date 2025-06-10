@@ -18,7 +18,7 @@ export const registerUser = async (formData) => {
 
     console.log("Fixed request data:", fixedFormData);
 
-    const response = await axios.post("/api/user/register", fixedFormData);
+    const response = await axios.post(`${API_BASE_URL}/api/user/register`, fixedFormData);
     console.log("Response from server:", response.data);
     return response.data;
   } catch (error) {
