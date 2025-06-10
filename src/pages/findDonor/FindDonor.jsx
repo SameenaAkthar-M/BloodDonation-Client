@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import useLocationData from '../../hooks/useLocationData';
 import './finddonor.css'
-import { fetchDonors } from '../../utils/api';
+import { fetchDonors } from '../../utils/api.js';
 import { useNavigate } from 'react-router-dom';
 
 const FindDonor = () => {

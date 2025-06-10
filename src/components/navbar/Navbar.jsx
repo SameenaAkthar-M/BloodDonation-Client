@@ -128,7 +128,7 @@ const Navbar = () => {
                     <p>My Profile</p>
                   </li>
                   <hr />
-                  <li onClick={handleLogout}>
+                  <li onClick={logout}>
                     <p>Logout</p>
                   </li>
                 </ul>

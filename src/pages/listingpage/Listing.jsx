@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import './listing.css';
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://blooddonation-server-1.onrender.com";
 
 const Listing = () => {
   const location = useLocation();
