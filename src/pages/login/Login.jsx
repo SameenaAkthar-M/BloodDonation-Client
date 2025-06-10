@@ -29,7 +29,7 @@ const Login = ({setUser}) => {
       if(res.data.success){
         const user = res.data.user;
         if (formData.userType === 'admin') {
-          window.open('http://localhost:5174');
+          window.open('https://redpulse-admin.netlify.app/');
           navigate('/');
           return
         }
